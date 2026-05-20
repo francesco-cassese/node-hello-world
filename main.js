@@ -1,4 +1,6 @@
 import { cowsay } from 'cowsayjs'
+import { ChatAnthropic } from '@langchain/anthropic';
+import { HumanMessage, SystemMessage } from 'langchain';
 
 const funnyCowQuote = [
     "Cosa ne pensi del latte parzialmente scremato? Io lo trovo un insulto al mio lavoro!",
@@ -23,5 +25,15 @@ if (variabileTerminale.includes('--la-perla-della-mucca')) {
 
 const CHIAVE_API_CLAUDE = process.env.APY_KEY
 
+const model = new ChatAnthropic({
+    model: 'claude-sonnet-4-6',
+    apiKey: CHIAVE_API_CLAUDE
+});
 
+model.invoke([
+    new SystemMessage("Ciao sei una mucca con una vena comica, ricordati di muggire sempre"),
+    new HumanMessage('Mi dici una barzelletta?')
+]).then(aiResponse => {
+    console.log(cowsay(aiResponse.content));
+})
 
