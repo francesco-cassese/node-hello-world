@@ -1,1 +1,3 @@
-console.log('Hello Boolean');
+const variabileTerminale = process.argv
+
+console.log(variabileTerminale);
