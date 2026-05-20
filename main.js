@@ -16,7 +16,7 @@ const selectedQuote = funnyCowQuote[casualQuote];
 
 const variabileTerminale = process.argv
 
-if (variabileTerminale[2] === '--la-perla-della-mucca') {
+if (variabileTerminale.includes('--la-perla-della-mucca')) {
     console.log(cowsay(selectedQuote));
 }
 
