@@ -21,4 +21,7 @@ if (variabileTerminale.includes('--la-perla-della-mucca')) {
 }
 
 
+const CHIAVE_API_CLAUDE = process.env.APY_KEY
+
+
 
