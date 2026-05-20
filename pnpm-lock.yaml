@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      cowsayjs:
+        specifier: ^2.0.0
+        version: 2.0.0
+
+packages:
+
+  cowsayjs@2.0.0:
+    resolution: {integrity: sha512-tnLvCAO9iL64dt8NEWidLx70LDm8kjvLAiZpd3ZFCyxYqnB5pyLGskdwDOsrrMj2Hp1oMujgCBMr8ua7l5EAdg==}
+    hasBin: true
+
+snapshots:
+
+  cowsayjs@2.0.0: {}

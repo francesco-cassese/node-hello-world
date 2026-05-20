@@ -4,12 +4,15 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start":"node main.js",
-    "watch":"node --watch main.js"
+    "start": "node main.js",
+    "watch": "node --watch main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.33.2",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "cowsayjs": "^2.0.0"
+  }
 }
